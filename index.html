@@ -25,7 +25,10 @@
     </a-assets>
 
 
-    <a-marker type='barcode' value='01'>
+    <a-marker type='barcode' value='01'
+    raycaster="objects: .clickable"
+    emitevents="true"
+    cursor="fuse: false; rayOrigin: mouse;">
       <a-entity
       animation-mixer
       gltf-model="#Xsen"
